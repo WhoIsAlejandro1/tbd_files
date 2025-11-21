@@ -1,9 +1,0 @@
-Badge_Type,Badge_Name,Description,Icon_Path,Total_Awarded,This_Period,Category
-ON_TIME,On-Time Heroes,Completed all trainings before due date,resources/images/badge-ontime.svg,1245,245,Timeliness
-ACCURACY,Accuracy Aces,Scored 90% or higher on all assessments,resources/images/badge-accuracy.svg,1012,212,Performance
-STREAK,Streak Masters,Maintained 5+ consecutive perfect scores,resources/images/badge-streak.svg,887,187,Consistency
-PERFECT,Perfect Scores,Achieved 100% on any training,resources/images/badge-perfect.svg,2103,203,Excellence
-BOOSTER,Bubble Boosters,Improved score by 10+ points month-over-month,resources/images/badge-booster.svg,458,58,Growth
-VOLUME,Volume Champions,Completed 10+ trainings in one month,resources/images/badge-streak.svg,325,42,Engagement
-MENTOR,Peer Mentors,Helped 5+ colleagues complete trainings,resources/images/badge-perfect.svg,156,28,Collaboration
-EARLY,Early Birds,Completed training within 24 hours of assignment,resources/images/badge-ontime.svg,678,134,Proactivity

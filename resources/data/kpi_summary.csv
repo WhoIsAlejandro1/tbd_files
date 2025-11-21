@@ -1,7 +1,0 @@
-KPI_Name,Current_Value,Previous_Value,Change,Target,Status,Icon_Path,Description
-Completion_Rate,87.2,85.5,+1.7,90.0,Below Target,resources/images/check-icon-blue.svg,Percentage of assigned trainings completed
-On_Time_Percentage,91.5,89.8,+1.7,95.0,Below Target,resources/images/check-icon-red.svg,Percentage of trainings completed by due date
-Total_Trainings,7250,6890,+360,8000,On Track,resources/images/document-icon-blue.svg,Total number of training courses completed
-Average_Score,84.6,83.2,+1.4,88.0,Below Target,resources/images/medal-icon-blue.svg,Average score across all completed trainings
-Active_Users,508,495,+13,550,On Track,resources/images/badge-booster.svg,Number of employees who completed at least one training
-Perfect_Scores,203,178,+25,250,On Track,resources/images/badge-perfect.svg,Number of 100% scores achieved this period
