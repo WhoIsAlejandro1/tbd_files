@@ -1,0 +1,21 @@
+Employee_ID,First_Name,Last_Name,Full_Name,Role,Market_Unit,Branch,Photo_URL,Email,Manager_Level
+EMP-1001,Kevin,Marshal,Kevin Marshal,Sales Account Manager,Carolinas MU,Charlotte NC,resources/images/profiles/emp-1001.jpg,kevin.marshal@company.com,VP
+EMP-3136,Jessica,Nolan,Jessica Nolan,Sales Account Manager,Corporate MU,Atlanta GA,resources/images/profiles/emp-3136.jpg,jessica.nolan@company.com,VP
+EMP-5694,Robert,Haves,Robert Haves,Sales Account Manager,Mid South MU,Memphis TN,resources/images/profiles/emp-5694.jpg,robert.haves@company.com,VP
+EMP-1004,Christina,Yang,Christina Yang,Bulk Account Merchandiser 5Day NU,Mid Atlantic MU,Baltimore MD,resources/images/profiles/emp-1004.jpg,christina.yang@company.com,VP
+EMP-4782,Adam,Joy,Adam Joy,Account Developer,Mid West MU,Akron OH,resources/images/profiles/emp-4782.jpg,adam.joy@company.com,Manager
+EMP-7402,Sarah,Mitchell,Sarah Mitchell,Value Account Manager,Carolinas MU,Charlotte NC,resources/images/profiles/emp-7402.jpg,sarah.mitchell@company.com,Manager
+EMP-9770,Mark,Patterson,Mark Patterson,Account Developer,Mid South MU,Memphis TN,resources/images/profiles/emp-9770.jpg,mark.patterson@company.com,Manager
+EMP-8649,David,Chen,David Chen,Account Developer,Mid West MU,Akron OH,resources/images/profiles/emp-8649.jpg,david.chen@company.com,Manager
+EMP-5948,Lisa,Anderson,Lisa Anderson,Account Developer,Corporate MU,Atlanta GA,resources/images/profiles/emp-5948.jpg,lisa.anderson@company.com,Manager
+EMP-1078,Michael,Torres,Michael Torres,Account Developer,Mid Atlantic MU,Baltimore MD,resources/images/profiles/emp-1078.jpg,michael.torres@company.com,Manager
+EMP-3813,Emily,Rodriguez,Emily Rodriguez,Account Developer,Carolinas MU,Raleigh NC,resources/images/profiles/emp-3813.jpg,emily.rodriguez@company.com,Employee
+EMP-8368,James,Wilson,James Wilson,Account Developer,Mid South MU,Nashville TN,resources/images/profiles/emp-8368.jpg,james.wilson@company.com,Employee
+EMP-7174,Jennifer,Brown,Jennifer Brown,Account Developer,Corporate MU,Atlanta GA,resources/images/profiles/emp-7174.jpg,jennifer.brown@company.com,Employee
+EMP-2901,Daniel,Garcia,Daniel Garcia,Account Developer,Mid West MU,Cleveland OH,resources/images/profiles/emp-2901.jpg,daniel.garcia@company.com,Employee
+EMP-5423,Amanda,Taylor,Amanda Taylor,Sales Account Manager,Carolinas MU,Columbia SC,resources/images/profiles/emp-5423.jpg,amanda.taylor@company.com,Employee
+EMP-6782,Brandon,Lee,Brandon Lee,Account Developer,Mid Atlantic MU,Richmond VA,resources/images/profiles/emp-6782.jpg,brandon.lee@company.com,Employee
+EMP-4156,Nicole,White,Nicole White,Value Account Manager,Mid South MU,Birmingham AL,resources/images/profiles/emp-4156.jpg,nicole.white@company.com,Employee
+EMP-9234,Christopher,Martin,Christopher Martin,Account Developer,Corporate MU,Macon GA,resources/images/profiles/emp-9234.jpg,christopher.martin@company.com,Employee
+EMP-7821,Stephanie,Davis,Stephanie Davis,Account Developer,Mid West MU,Toledo OH,resources/images/profiles/emp-7821.jpg,stephanie.davis@company.com,Employee
+EMP-3567,Ryan,Thompson,Ryan Thompson,Sales Account Manager,Carolinas MU,Wilmington NC,resources/images/profiles/emp-3567.jpg,ryan.thompson@company.com,Employee

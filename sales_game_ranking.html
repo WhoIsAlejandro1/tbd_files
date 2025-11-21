@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Up Performance Dashboard</title>
+    <link rel="stylesheet" href="resources/css/styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header Section -->
+        <header class="header">
+            <h1 class="title">Bubble Up Performance Dashboard</h1>
+            <img src="resources/images/coca-cola-logo.svg" alt="Coca-Cola Consolidated" class="logo">
+        </header>
+
+        <!-- Top Row: KPI Cards -->
+        <section class="kpi-section">
+            <div class="kpi-card">
+                <img src="resources/images/check-icon-blue.svg" alt="Completion Rate" class="kpi-icon">
+                <div class="kpi-content">
+                    <div class="kpi-label">Completion Rate</div>
+                    <div class="kpi-value">87.2%</div>
+                </div>
+            </div>
+
+            <div class="kpi-card">
+                <img src="resources/images/check-icon-red.svg" alt="On-Time Percentage" class="kpi-icon">
+                <div class="kpi-content">
+                    <div class="kpi-label">On-Time Percentage</div>
+                    <div class="kpi-value">91.5%</div>
+                </div>
+            </div>
+
+            <div class="kpi-card">
+                <img src="resources/images/document-icon-blue.svg" alt="Total Trainings" class="kpi-icon">
+                <div class="kpi-content">
+                    <div class="kpi-label">Total Trainings Completed</div>
+                    <div class="kpi-value">7,250</div>
+                </div>
+            </div>
+
+            <div class="kpi-card">
+                <img src="resources/images/medal-icon-blue.svg" alt="Average Score" class="kpi-icon">
+                <div class="kpi-content">
+                    <div class="kpi-label">Average Score</div>
+                    <div class="kpi-value">84.6</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Middle Row: Ranking, VP Performance, Badges -->
+        <section class="middle-section">
+            <!-- Market Unit Ranking -->
+            <div class="card ranking-card">
+                <h2 class="card-title">Market Unit Ranking</h2>
+                <div class="ranking-list">
+                    <div class="ranking-item">
+                        <img src="resources/images/medal-gold.svg" alt="Gold Medal" class="ranking-medal">
+                        <div class="ranking-details">
+                            <div class="ranking-name">Carolinas MU</div>
+                            <div class="ranking-location">Carolinas MU</div>
+                        </div>
+                        <div class="ranking-stats">
+                            <div class="ranking-percentage">94.1%</div>
+                            <div class="ranking-change positive">+2.7%</div>
+                        </div>
+                    </div>
+
+                    <div class="ranking-item">
+                        <img src="resources/images/medal-gold.svg" alt="Medal" class="ranking-medal">
+                        <div class="ranking-details">
+                            <div class="ranking-name">Corporate MU</div>
+                            <div class="ranking-location">Corporate MU</div>
+                        </div>
+                        <div class="ranking-stats">
+                            <div class="ranking-percentage">88.7%</div>
+                            <div class="ranking-change positive">+1.5%</div>
+                        </div>
+                    </div>
+
+                    <div class="ranking-item">
+                        <img src="resources/images/medal-bronze.svg" alt="Bronze Medal" class="ranking-medal">
+                        <div class="ranking-details">
+                            <div class="ranking-name">Mid South MU</div>
+                            <div class="ranking-location">Mid South MU</div>
+                        </div>
+                        <div class="ranking-stats">
+                            <div class="ranking-percentage">86.3%</div>
+                            <div class="ranking-change positive">+2.4%</div>
+                        </div>
+                    </div>
+
+                    <div class="ranking-item">
+                        <img src="resources/images/medal-silver.svg" alt="Silver Medal" class="ranking-medal">
+                        <div class="ranking-details">
+                            <div class="ranking-name">Mid West MU</div>
+                            <div class="ranking-location">79.5 West MU</div>
+                        </div>
+                        <div class="ranking-stats">
+                            <div class="ranking-percentage">79.5%</div>
+                            <div class="ranking-change positive">+1.1%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VP Performance -->
+            <div class="card vp-card">
+                <h2 class="card-title">VP Performance</h2>
+                <div class="vp-grid">
+                    <div class="vp-profile">
+                        <img src="resources/images/placeholder-person.svg" alt="Kevin Marshal" class="vp-photo">
+                        <div class="vp-name">Kevin Marshal</div>
+                        <div class="vp-location">Carolinas MU</div>
+                        <div class="vp-percentage">96.1%</div>
+                        <div class="vp-xp blue-xp">
+                            <span class="xp-icon">P</span>
+                            <span>684 XP</span>
+                        </div>
+                    </div>
+
+                    <div class="vp-profile">
+                        <img src="resources/images/placeholder-person.svg" alt="Jessica Nolan" class="vp-photo">
+                        <div class="vp-name">Jessica Nolan</div>
+                        <div class="vp-location">Corporate MU</div>
+                        <div class="vp-percentage">88.4%</div>
+                        <div class="vp-xp red-xp">
+                            <span class="xp-icon">P</span>
+                            <span>175 XP</span>
+                        </div>
+                    </div>
+
+                    <div class="vp-profile">
+                        <img src="resources/images/placeholder-person.svg" alt="Robert Haves" class="vp-photo">
+                        <div class="vp-name">Robert Haves</div>
+                        <div class="vp-location">Mid South MU</div>
+                        <div class="vp-percentage">85.7%</div>
+                        <div class="vp-xp blue-xp">
+                            <span class="xp-icon">P</span>
+                            <span>785 XP</span>
+                        </div>
+                    </div>
+
+                    <div class="vp-profile">
+                        <img src="resources/images/placeholder-person.svg" alt="Christina Yang" class="vp-photo">
+                        <div class="vp-name">Christina Yang</div>
+                        <div class="vp-location">Mid Atlantk MU</div>
+                        <div class="vp-percentage">79.5%</div>
+                        <div class="vp-xp red-xp">
+                            <span class="xp-icon">P</span>
+                            <span>720 XP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Badges Earned -->
+            <div class="card badges-card">
+                <h2 class="card-title">Badges Earned This Period</h2>
+                <div class="badges-list">
+                    <div class="badge-item">
+                        <img src="resources/images/badge-ontime.svg" alt="On-Time Heroes" class="badge-icon">
+                        <div class="badge-details">
+                            <div class="badge-name">On-Time Heroes</div>
+                        </div>
+                        <div class="badge-count">245</div>
+                    </div>
+
+                    <div class="badge-item">
+                        <img src="resources/images/badge-accuracy.svg" alt="Accuracy Aces" class="badge-icon">
+                        <div class="badge-details">
+                            <div class="badge-name">Accuracy Aces</div>
+                        </div>
+                        <div class="badge-count">212</div>
+                    </div>
+
+                    <div class="badge-item">
+                        <img src="resources/images/badge-streak.svg" alt="Streak Masters" class="badge-icon">
+                        <div class="badge-details">
+                            <div class="badge-name">Streak Masters</div>
+                        </div>
+                        <div class="badge-count">187</div>
+                    </div>
+
+                    <div class="badge-item">
+                        <img src="resources/images/badge-perfect.svg" alt="Perfect Scores" class="badge-icon">
+                        <div class="badge-details">
+                            <div class="badge-name">Perfect Scores</div>
+                        </div>
+                        <div class="badge-count">203</div>
+                    </div>
+
+                    <div class="badge-item">
+                        <img src="resources/images/badge-booster.svg" alt="Bubble Boosters" class="badge-icon">
+                        <div class="badge-details">
+                            <div class="badge-name">Bubble Boosters</div>
+                        </div>
+                        <div class="badge-count">58</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom Row: Top Performers, Branches, Score Distribution -->
+        <section class="bottom-section">
+            <!-- Top Performers -->
+            <div class="card performers-card">
+                <h2 class="card-title">Top Performers In Each Branch</h2>
+                <div class="performers-grid">
+                    <div class="performer-row">
+                        <img src="resources/images/placeholder-person.svg" alt="Adam Joy" class="performer-photo">
+                        <div class="performer-details">
+                            <div class="performer-name">Adam Joy</div>
+                            <div class="performer-location">Akron, OH</div>
+                        </div>
+                        <div class="performer-score positive">+95%</div>
+                    </div>
+
+                    <div class="performer-row">
+                        <img src="resources/images/placeholder-person.svg" alt="Baltimore" class="performer-photo">
+                        <div class="performer-details">
+                            <div class="performer-name">Baltimore</div>
+                            <div class="performer-location">MD</div>
+                        </div>
+                        <div class="performer-score positive">+220</div>
+                    </div>
+
+                    <div class="performer-row">
+                        <img src="resources/images/placeholder-person.svg" alt="Mark Patterson" class="performer-photo">
+                        <div class="performer-details">
+                            <div class="performer-name">Mark Patterson</div>
+                            <div class="performer-location">Memphis, TN</div>
+                        </div>
+                        <div class="performer-score positive">+1%</div>
+                    </div>
+
+                    <div class="performer-row">
+                        <img src="resources/images/placeholder-person.svg" alt="Toripa, FL" class="performer-photo">
+                        <div class="performer-details">
+                            <div class="performer-name">Toripa, FL</div>
+                            <div class="performer-location">TPA</div>
+                        </div>
+                        <div class="performer-score positive">+12</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Branches Overview -->
+            <div class="card branches-card">
+                <h2 class="card-title">Branches Overview</h2>
+                <table class="branches-table">
+                    <thead>
+                        <tr>
+                            <th>Branch</th>
+                            <th>Completion</th>
+                            <th>On-Time</th>
+                            <th>Avg Score</th>
+                            <th>Train</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Akron, OH</td>
+                            <td>87.2%</td>
+                            <td class="on-time-green">88.5%</td>
+                            <td>91.2</td>
+                            <td>1,550</td>
+                        </tr>
+                        <tr>
+                            <td>Baltimore, MD</td>
+                            <td>86.3%</td>
+                            <td class="on-time-green">91.5%</td>
+                            <td>83.2</td>
+                            <td>4,150</td>
+                        </tr>
+                        <tr>
+                            <td>Memphis, TN</td>
+                            <td>84.9%</td>
+                            <td class="on-time-green">92.5%</td>
+                            <td>87.9</td>
+                            <td>1,005</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Score Distribution -->
+            <div class="card distribution-card">
+                <h2 class="card-title">Score Distribution</h2>
+                <div class="distribution-list">
+                    <div class="distribution-row">
+                        <div class="distribution-label">50-59</div>
+                        <div class="distribution-bar-container">
+                            <div class="distribution-bar red-bar" style="width: 3%;"></div>
+                        </div>
+                        <div class="distribution-percentage">3%</div>
+                    </div>
+
+                    <div class="distribution-row">
+                        <div class="distribution-label">60-69</div>
+                        <div class="distribution-bar-container">
+                            <div class="distribution-bar red-bar" style="width: 3%;"></div>
+                        </div>
+                        <div class="distribution-percentage">3%</div>
+                    </div>
+
+                    <div class="distribution-row">
+                        <div class="distribution-label">70-79</div>
+                        <div class="distribution-bar-container">
+                            <div class="distribution-bar orange-bar" style="width: 7%;"></div>
+                        </div>
+                        <div class="distribution-percentage">7%</div>
+                    </div>
+
+                    <div class="distribution-row">
+                        <div class="distribution-label">80-89</div>
+                        <div class="distribution-bar-container">
+                            <div class="distribution-bar blue-bar" style="width: 29%;"></div>
+                        </div>
+                        <div class="distribution-percentage">29%</div>
+                    </div>
+
+                    <div class="distribution-row">
+                        <div class="distribution-label">90-100</div>
+                        <div class="distribution-bar-container">
+                            <div class="distribution-bar blue-bar" style="width: 59%;"></div>
+                        </div>
+                        <div class="distribution-percentage">59%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
