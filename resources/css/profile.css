@@ -1,0 +1,804 @@
+/* ===================================
+   GLOBAL STYLES & RESET
+   =================================== */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: url('../images/backgroundforprofile.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: #1f2937;
+    overflow-x: hidden;
+}
+
+/* ===================================
+   PAGE FRAME / VIEWPORT CONTAINER
+   =================================== */
+.page-frame {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* ===================================
+   PROFILE CONTAINER
+   =================================== */
+.profile-container {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+/* ===================================
+   HEADER SECTION
+   =================================== */
+.header {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 20px 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.back-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(231, 76, 60, 0.1);
+    border: 1px solid #E74C3C;
+    color: #E74C3C;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.back-button:hover {
+    background: #E74C3C;
+    color: white;
+    transform: translateX(-3px);
+}
+
+.back-button .material-icons {
+    font-size: 20px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #6b7280;
+    text-align: center;
+    letter-spacing: -0.5px;
+    grid-column: 2;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    justify-self: end;
+    grid-column: 3;
+}
+
+/* ===================================
+   PROFILE ROW LAYOUT
+   =================================== */
+.profile-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* ===================================
+   CARD STYLES (Shared)
+   =================================== */
+.card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 16px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.card-subtitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgba(31, 41, 55, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subtitle-icon {
+    font-size: 24px;
+    color: #E74C3C;
+}
+
+/* ===================================
+   PROFILE CARD
+   =================================== */
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 25px;
+}
+
+.profile-photo-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    font-size: 120px;
+    color: #4A90E2;
+    border-radius: 16px;
+    border: 4px solid #E74C3C;
+    background: white;
+}
+
+.profile-badge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #F39C12 0%, #E67E22 100%);
+    border-radius: 50%;
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-badge .badge-icon {
+    color: white;
+    font-size: 22px;
+}
+
+.profile-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+.profile-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #6b7280;
+    margin-bottom: 4px;
+}
+
+.profile-location {
+    font-size: 0.95rem;
+    color: #9ca3af;
+    margin-bottom: 25px;
+}
+
+/* Profile Stats */
+.profile-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.xp-stat {
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.15) 0%, rgba(53, 122, 189, 0.15) 100%);
+}
+
+.streak-stat {
+    background: linear-gradient(135deg, rgba(243, 156, 18, 0.15) 0%, rgba(230, 126, 34, 0.15) 100%);
+}
+
+.stat-icon {
+    font-size: 32px;
+    color: #E74C3C;
+}
+
+.xp-stat .stat-icon {
+    color: #4A90E2;
+}
+
+.streak-stat .stat-icon {
+    color: #F39C12;
+}
+
+.stat-content {
+    flex: 1;
+}
+
+.stat-value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1f2937;
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+/* ===================================
+   MODULES CARD
+   =================================== */
+.modules-card {
+    padding: 25px;
+}
+
+.module-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.module-item {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.module-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.module-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.module-status {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.module-status.in-progress {
+    background: rgba(74, 144, 226, 0.2);
+    color: #4A90E2;
+}
+
+.module-status.completed {
+    background: rgba(39, 174, 96, 0.2);
+    color: #27AE60;
+}
+
+.module-progress-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.module-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #E74C3C 0%, #C0392B 100%);
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+.module-progress-fill.completed {
+    background: linear-gradient(90deg, #27AE60 0%, #229954 100%);
+}
+
+.module-meta {
+    font-size: 0.8rem;
+    color: #6b7280;
+}
+
+/* ===================================
+   BADGES CARD
+   =================================== */
+.badges-card-profile {
+    padding: 25px;
+}
+
+.badges-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.badge-earned {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 12px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: all 0.3s;
+    min-height: 120px;
+}
+
+.badge-earned:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.badge-circle {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.badge-circle .material-icons {
+    font-size: 36px;
+    color: white;
+}
+
+.badge-circle.gold {
+    background: linear-gradient(135deg, #F39C12 0%, #E67E22 100%);
+}
+
+.badge-circle.blue {
+    background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+}
+
+.badge-circle.orange {
+    background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%);
+}
+
+.badge-circle.green {
+    background: linear-gradient(135deg, #27AE60 0%, #229954 100%);
+}
+
+.badge-name-small {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1f2937;
+    text-align: center;
+    line-height: 1.3;
+}
+
+/* ===================================
+   PROGRESS DETAIL CARD
+   =================================== */
+.progress-detail-card {
+    padding: 30px;
+}
+
+.current-module {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.module-title-large {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+.module-assigned {
+    font-size: 0.95rem;
+    color: #6b7280;
+    margin-bottom: 30px;
+}
+
+.progress-circle-wrapper {
+    margin-bottom: 25px;
+}
+
+.progress-circle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.progress-ring {
+    transform: rotate(-90deg);
+}
+
+.progress-ring-circle {
+    transition: stroke-dashoffset 0.5s ease;
+}
+
+.progress-percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: 700;
+    color: #E74C3C;
+}
+
+.streak-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: rgba(243, 156, 18, 0.1);
+    border-radius: 20px;
+    border: 1px solid rgba(243, 156, 18, 0.3);
+}
+
+.streak-icon {
+    font-size: 24px;
+    color: #F39C12;
+}
+
+.streak-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #6b7280;
+}
+
+.streak-days {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.streak-target {
+    font-size: 0.95rem;
+    color: #9ca3af;
+}
+
+/* ===================================
+   LEADERBOARD CARD
+   =================================== */
+.leaderboard-card {
+    padding: 25px;
+}
+
+.rank-badge {
+    margin-left: auto;
+    background: linear-gradient(135deg, #E74C3C 0%, #C0392B 100%);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Current User Highlight */
+.leaderboard-current {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 20px;
+    background: linear-gradient(135deg, rgba(74, 144, 226, 0.15) 0%, rgba(53, 122, 189, 0.1) 100%);
+    border: 2px solid #4A90E2;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.current-rank {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+.current-avatar {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    color: #4A90E2;
+    flex-shrink: 0;
+}
+
+.current-info {
+    flex: 1;
+}
+
+.current-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 6px;
+}
+
+.current-stats {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+}
+
+.stat-points {
+    color: #4A90E2;
+    font-weight: 700;
+}
+
+.stat-divider {
+    color: #9ca3af;
+}
+
+.stat-completion {
+    color: #27AE60;
+    font-weight: 700;
+}
+
+/* Leaderboard List */
+.leaderboard-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.leaderboard-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s;
+}
+
+.leaderboard-item:hover {
+    background: rgba(255, 255, 255, 0.35);
+    transform: translateX(3px);
+}
+
+.item-rank {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.rank-medal {
+    font-size: 28px;
+}
+
+.rank-1 .rank-medal {
+    color: #F39C12;
+}
+
+.rank-2 .rank-medal {
+    color: #95a5a6;
+}
+
+.rank-3 .rank-medal {
+    color: #CD7F32;
+}
+
+.rank-num {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(107, 114, 128, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #6b7280;
+}
+
+.item-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    color: #6b7280;
+    flex-shrink: 0;
+}
+
+.item-info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.item-stats {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.item-points {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #4A90E2;
+}
+
+.item-completion {
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 8px;
+    min-width: 50px;
+    text-align: center;
+}
+
+.item-completion.high {
+    background: rgba(39, 174, 96, 0.15);
+    color: #27AE60;
+}
+
+.item-completion.low {
+    background: rgba(231, 76, 60, 0.15);
+    color: #E74C3C;
+}
+
+/* ===================================
+   PERFORMANCE METRICS CARD
+   =================================== */
+.metrics-card {
+    padding: 25px;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.metric-item {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.metric-item:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.metric-label {
+    font-size: 0.85rem;
+    color: #6b7280;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+@media screen and (max-width: 1200px) {
+    .profile-row {
+        grid-template-columns: 1fr;
+    }
+
+    .badges-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .back-button {
+        font-size: 0.85rem;
+        padding: 8px 16px;
+    }
+
+    .badges-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .badges-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

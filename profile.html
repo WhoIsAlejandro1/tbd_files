@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Profile - Bubble Up Performance Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="resources/css/profile.css">
+</head>
+<body>
+    <div class="page-frame">
+        <div class="profile-container">
+            <!-- Header Section -->
+            <header class="header">
+                <button class="back-button" onclick="goBack()">
+                    <span class="material-icons">arrow_back</span>
+                    Back to Dashboard
+                </button>
+                <img src="https://webapp-prd-cci-web-staging.azurewebsites.net/wp-content/uploads/2021/11/Coke-Consolidated-Primary-Logo.png" alt="Coca-Cola Consolidated" class="logo">
+                <h1 class="title">Employee Profile</h1>
+            </header>
+
+            <!-- Row 1: Profile Card & Module Progress -->
+            <div class="profile-row">
+                <!-- Profile Info Card -->
+                <div class="card profile-card">
+                    <div class="profile-photo-wrapper">
+                        <span class="material-icons profile-photo" id="profilePhoto">account_circle</span>
+                        <div class="profile-badge">
+                            <span class="material-icons badge-icon">emoji_events</span>
+                        </div>
+                    </div>
+                    <h2 class="profile-name" id="profileName">Adam Joy</h2>
+                    <p class="profile-title" id="profileTitle">Sales Associate</p>
+                    <p class="profile-location" id="profileLocation">Akron, OH</p>
+
+                    <!-- XP and Streak -->
+                    <div class="profile-stats">
+                        <div class="stat-item xp-stat">
+                            <span class="material-icons stat-icon">stars</span>
+                            <div class="stat-content">
+                                <div class="stat-value" id="xpValue">4,160</div>
+                                <div class="stat-label">XP</div>
+                            </div>
+                        </div>
+                        <div class="stat-item streak-stat">
+                            <span class="material-icons stat-icon">local_fire_department</span>
+                            <div class="stat-content">
+                                <div class="stat-value" id="streakValue">10</div>
+                                <div class="stat-label">Day Streak</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module Progress Detail -->
+                <div class="card progress-detail-card">
+                    <h3 class="card-subtitle">
+                        <span class="material-icons subtitle-icon">trending_up</span>
+                        Current Module Progress
+                    </h3>
+                    <div class="current-module">
+                        <div class="module-title-large">Teamwork Essentials</div>
+                        <div class="module-assigned">Assigned Mar 2</div>
+                        <div class="progress-circle-wrapper">
+                            <div class="progress-circle">
+                                <svg class="progress-ring" width="120" height="120">
+                                    <circle class="progress-ring-circle-bg" stroke="#e5e7eb" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+                                    <circle class="progress-ring-circle" stroke="#E74C3C" stroke-width="8" fill="transparent" r="52" cx="60" cy="60" style="stroke-dasharray: 326.73; stroke-dashoffset: 65.35;"/>
+                                </svg>
+                                <div class="progress-percentage">80%</div>
+                            </div>
+                        </div>
+                        <div class="streak-info">
+                            <span class="material-icons streak-icon">local_fire_department</span>
+                            <span class="streak-label">Streak:</span>
+                            <span class="streak-days">10 days</span>
+                            <span class="streak-target">/ 30 days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 2: Badges & Performance Metrics -->
+            <div class="profile-row">
+                <!-- Badges Card -->
+                <div class="card badges-card-profile">
+                    <h3 class="card-subtitle">
+                        <span class="material-icons subtitle-icon">emoji_events</span>
+                        Badges Earned
+                    </h3>
+                    <div class="badges-grid">
+                        <div class="badge-earned">
+                            <div class="badge-circle gold">
+                                <span class="material-icons">grade</span>
+                            </div>
+                            <div class="badge-name-small">Perfect Score</div>
+                        </div>
+                        <div class="badge-earned">
+                            <div class="badge-circle blue">
+                                <span class="material-icons">verified</span>
+                            </div>
+                            <div class="badge-name-small">Accuracy Ace</div>
+                        </div>
+                        <div class="badge-earned">
+                            <div class="badge-circle orange">
+                                <span class="material-icons">local_fire_department</span>
+                            </div>
+                            <div class="badge-name-small">Streak Master</div>
+                        </div>
+                        <div class="badge-earned">
+                            <div class="badge-circle green">
+                                <span class="material-icons">access_time</span>
+                            </div>
+                            <div class="badge-name-small">On-Time Hero</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Performance Metrics Card -->
+                <div class="card metrics-card">
+                    <h3 class="card-subtitle">
+                        <span class="material-icons subtitle-icon">bar_chart</span>
+                        Performance Metrics
+                    </h3>
+                    <div class="metrics-grid">
+                        <div class="metric-item">
+                            <div class="metric-label">Trainings Completed</div>
+                            <div class="metric-value">12</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-label">Average Score</div>
+                            <div class="metric-value">92.5</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-label">On-Time Rate</div>
+                            <div class="metric-value">95%</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-label">Total XP Earned</div>
+                            <div class="metric-value">4,160</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 3: Modules & Branch Leaderboard -->
+            <div class="profile-row">
+                <!-- Modules Card -->
+                <div class="card modules-card">
+                    <h3 class="card-subtitle">
+                        <span class="material-icons subtitle-icon">school</span>
+                        Modules
+                    </h3>
+                    <div class="module-list">
+                        <div class="module-item">
+                            <div class="module-header">
+                                <div class="module-name">Teamwork Essentials</div>
+                                <span class="module-status in-progress">In Progress</span>
+                            </div>
+                            <div class="module-progress-bar">
+                                <div class="module-progress-fill" style="width: 80%;"></div>
+                            </div>
+                            <div class="module-meta">80% Complete</div>
+                        </div>
+                        <div class="module-item">
+                            <div class="module-header">
+                                <div class="module-name">Sales Techniques</div>
+                                <span class="module-status completed">Completed</span>
+                            </div>
+                            <div class="module-progress-bar">
+                                <div class="module-progress-fill completed" style="width: 100%;"></div>
+                            </div>
+                            <div class="module-meta">Completed on Apr 15</div>
+                        </div>
+                        <div class="module-item">
+                            <div class="module-header">
+                                <div class="module-name">Customer Service Excellence</div>
+                                <span class="module-status completed">Completed</span>
+                            </div>
+                            <div class="module-progress-bar">
+                                <div class="module-progress-fill completed" style="width: 100%;"></div>
+                            </div>
+                            <div class="module-meta">Completed on Mar 28</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branch Leaderboard Card -->
+                <div class="card leaderboard-card">
+                    <h3 class="card-subtitle">
+                        <span class="material-icons subtitle-icon">leaderboard</span>
+                        Branch Leaderboard
+                        <span class="rank-badge">RANK 5</span>
+                    </h3>
+
+                    <!-- Current User Highlight -->
+                    <div class="leaderboard-current">
+                        <div class="current-rank">5</div>
+                        <span class="material-icons current-avatar">account_circle</span>
+                        <div class="current-info">
+                            <div class="current-name" id="leaderName">Adam Joy</div>
+                            <div class="current-stats">
+                                <span class="stat-points">4,160 pts</span>
+                                <span class="stat-divider">•</span>
+                                <span class="stat-completion">95%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Top Performers List -->
+                    <div class="leaderboard-list">
+                        <div class="leaderboard-item rank-1">
+                            <div class="item-rank">
+                                <span class="material-icons rank-medal">emoji_events</span>
+                            </div>
+                            <span class="material-icons item-avatar">account_circle</span>
+                            <div class="item-info">
+                                <div class="item-name">Caitlin M.</div>
+                                <div class="item-stats">
+                                    <span class="item-points">5,920</span>
+                                    <span class="item-completion high">85%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="leaderboard-item rank-2">
+                            <div class="item-rank">
+                                <span class="material-icons rank-medal">emoji_events</span>
+                            </div>
+                            <span class="material-icons item-avatar">account_circle</span>
+                            <div class="item-info">
+                                <div class="item-name">David H.</div>
+                                <div class="item-stats">
+                                    <span class="item-points">5,920</span>
+                                    <span class="item-completion low">39%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="leaderboard-item rank-3">
+                            <div class="item-rank">
+                                <span class="material-icons rank-medal">emoji_events</span>
+                            </div>
+                            <span class="material-icons item-avatar">account_circle</span>
+                            <div class="item-info">
+                                <div class="item-name">Josh R.</div>
+                                <div class="item-stats">
+                                    <span class="item-points">5,860</span>
+                                    <span class="item-completion high">86%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="leaderboard-item">
+                            <div class="item-rank">
+                                <span class="rank-num">4</span>
+                            </div>
+                            <span class="material-icons item-avatar">account_circle</span>
+                            <div class="item-info">
+                                <div class="item-name">Steve R.</div>
+                                <div class="item-stats">
+                                    <span class="item-points">5,680</span>
+                                    <span class="item-completion high">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="resources/js/profile.js"></script>
+</body>
+</html>

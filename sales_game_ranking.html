@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Up Performance Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="resources/css/styles.css?v=3">
+</head>
+<body>
+    <div class="page-frame">
+        <div class="dashboard">
+        <!-- Header Section -->
+        <header class="header">
+            <img src="https://webapp-prd-cci-web-staging.azurewebsites.net/wp-content/uploads/2021/11/Coke-Consolidated-Primary-Logo.png" alt="Coca-Cola Consolidated" class="logo">
+            <h1 class="title">Bubble Up</h1>
+        </header>
+
+        <!-- Top Row: KPI Cards -->
+        <section class="kpi-section">
+            <div class="kpi-card">
+                <span class="material-icons kpi-icon" style="color: #4A90E2;">check_circle</span>
+                <div class="kpi-content">
+                    <div class="kpi-label">Completion Rate</div>
+                    <div class="kpi-value">87.2%</div>
+                </div>
+            </div>
+
+            <div class="kpi-card">
+                <span class="material-icons kpi-icon" style="color: #E74C3C;">schedule</span>
+                <div class="kpi-content">
+                    <div class="kpi-label">On-Time Percentage</div>
+                    <div class="kpi-value">91.5%</div>
+                </div>
+            </div>
+
+            <div class="kpi-card">
+                <span class="material-icons kpi-icon" style="color: #4A90E2;">school</span>
+                <div class="kpi-content">
+                    <div class="kpi-label">Total Trainings Completed</div>
+                    <div class="kpi-value">7,250</div>
+                </div>
+            </div>
+
+            <div class="kpi-card">
+                <span class="material-icons kpi-icon" style="color: #4A90E2;">emoji_events</span>
+                <div class="kpi-content">
+                    <div class="kpi-label">Average Score</div>
+                    <div class="kpi-value">84.6</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Middle Row: Ranking, VP Performance, Badges -->
+        <section class="middle-section">
+            <!-- Market Unit Ranking -->
+            <div class="card ranking-card">
+                <h2 class="card-title">Market Unit Ranking</h2>
+                <div class="ranking-list">
+                    <div class="ranking-item">
+                        <img src="resources/images/medal-gold.svg" alt="1st Place" class="ranking-medal">
+                        <div class="ranking-details">
+                            <div class="ranking-name">Carolinas</div>
+                            <div class="ranking-location"></div>
+                        </div>
+                        <div class="ranking-stats">
+                            <div class="ranking-percentage">94.1%</div>
+                            <div class="ranking-change positive">+2.7%</div>
+                        </div>
+                    </div>
+
+                    <div class="ranking-item">
+                        <img src="resources/images/medal-silver.svg" alt="2nd Place" class="ranking-medal">
+                        <div class="ranking-details">
+                            <div class="ranking-name">Corporate</div>
+                            <div class="ranking-location"></div>
+                        </div>
+                        <div class="ranking-stats">
+                            <div class="ranking-percentage">88.7%</div>
+                            <div class="ranking-change positive">+1.5%</div>
+                        </div>
+                    </div>
+
+                    <div class="ranking-item">
+                        <img src="resources/images/medal-bronze.svg" alt="3rd Place" class="ranking-medal">
+                        <div class="ranking-details">
+                            <div class="ranking-name">Mid South</div>
+                            <div class="ranking-location"></div>
+                        </div>
+                        <div class="ranking-stats">
+                            <div class="ranking-percentage">86.3%</div>
+                            <div class="ranking-change positive">+2.4%</div>
+                        </div>
+                    </div>
+
+                    <div class="ranking-item">
+                        <img src="resources/images/medal-copper.svg" alt="4th Place" class="ranking-medal">
+                        <div class="ranking-details">
+                            <div class="ranking-name">Mid West</div>
+                            <div class="ranking-location"></div>
+                        </div>
+                        <div class="ranking-stats">
+                            <div class="ranking-percentage">79.5%</div>
+                            <div class="ranking-change positive">+1.1%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VP Performance -->
+            <div class="card vp-card">
+                <h2 class="card-title">VP Performance</h2>
+                <div class="vp-grid">
+                    <div class="vp-profile">
+                        <span class="material-icons vp-photo" style="font-size: 80px; color: #4A90E2;">account_circle</span>
+                        <div class="vp-name">Kevin Marshal</div>
+                        <div class="vp-location">Carolinas MU</div>
+                        <div class="vp-percentage">96.1%</div>
+                        <div class="vp-change positive">↑ +3.2%</div>
+                        <div class="vp-xp blue-xp">
+                            <span class="material-icons xp-icon" style="font-size: 1rem;">stars</span>
+                            <span>684 XP</span>
+                        </div>
+                    </div>
+
+                    <div class="vp-profile">
+                        <span class="material-icons vp-photo" style="font-size: 80px; color: #E74C3C;">account_circle</span>
+                        <div class="vp-name">Jessica Nolan</div>
+                        <div class="vp-location">Corporate MU</div>
+                        <div class="vp-percentage">88.4%</div>
+                        <div class="vp-change negative">↓ -1.8%</div>
+                        <div class="vp-xp red-xp">
+                            <span class="material-icons xp-icon" style="font-size: 1rem;">stars</span>
+                            <span>175 XP</span>
+                        </div>
+                    </div>
+
+                    <div class="vp-profile">
+                        <span class="material-icons vp-photo" style="font-size: 80px; color: #4A90E2;">account_circle</span>
+                        <div class="vp-name">Robert Haves</div>
+                        <div class="vp-location">Mid South MU</div>
+                        <div class="vp-percentage">85.7%</div>
+                        <div class="vp-change positive">↑ +2.1%</div>
+                        <div class="vp-xp blue-xp">
+                            <span class="material-icons xp-icon" style="font-size: 1rem;">stars</span>
+                            <span>785 XP</span>
+                        </div>
+                    </div>
+
+                    <div class="vp-profile">
+                        <span class="material-icons vp-photo" style="font-size: 80px; color: #6b7280;">account_circle</span>
+                        <div class="vp-name">Christina Yang</div>
+                        <div class="vp-location">Mid Atlantk MU</div>
+                        <div class="vp-percentage">79.5%</div>
+                        <div class="vp-change positive">↑ +0.8%</div>
+                        <div class="vp-xp red-xp">
+                            <span class="material-icons xp-icon" style="font-size: 1rem;">stars</span>
+                            <span>720 XP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Badges Earned -->
+            <div class="card badges-card">
+                <h2 class="card-title">Badges Earned This Period</h2>
+                <div class="badges-list">
+                    <div class="badge-item">
+                        <span class="material-icons badge-icon" style="color: #27AE60;">access_time</span>
+                        <div class="badge-details">
+                            <div class="badge-name">On-Time Heroes</div>
+                        </div>
+                        <div class="badge-count">245</div>
+                    </div>
+
+                    <div class="badge-item">
+                        <span class="material-icons badge-icon" style="color: #4A90E2;">verified</span>
+                        <div class="badge-details">
+                            <div class="badge-name">Accuracy Aces</div>
+                        </div>
+                        <div class="badge-count">212</div>
+                    </div>
+
+                    <div class="badge-item">
+                        <span class="material-icons badge-icon" style="color: #F39C12;">local_fire_department</span>
+                        <div class="badge-details">
+                            <div class="badge-name">Streak Masters</div>
+                        </div>
+                        <div class="badge-count">187</div>
+                    </div>
+
+                    <div class="badge-item">
+                        <span class="material-icons badge-icon" style="color: #9B59B6;">grade</span>
+                        <div class="badge-details">
+                            <div class="badge-name">Perfect Scores</div>
+                        </div>
+                        <div class="badge-count">203</div>
+                    </div>
+
+                    <div class="badge-item">
+                        <span class="material-icons badge-icon" style="color: #E74C3C;">rocket_launch</span>
+                        <div class="badge-details">
+                            <div class="badge-name">Bubble Boosters</div>
+                        </div>
+                        <div class="badge-count">58</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom Row: Top Performers, Branches, Score Distribution -->
+        <section class="bottom-section">
+            <!-- Top Performers -->
+            <div class="card performers-card">
+                <h2 class="card-title">Top Performers In Each Branch</h2>
+                <div class="performers-grid">
+                    <div class="performer-row">
+                        <span class="material-icons performer-photo" style="font-size: 50px; color: #4A90E2;">account_circle</span>
+                        <div class="performer-details">
+                            <div class="performer-name">Adam Joy</div>
+                            <div class="performer-location">Akron, OH</div>
+                        </div>
+                        <div class="performer-score positive">+95%</div>
+                    </div>
+
+                    <div class="performer-row">
+                        <span class="material-icons performer-photo" style="font-size: 50px; color: #27AE60;">account_circle</span>
+                        <div class="performer-details">
+                            <div class="performer-name">Baltimore</div>
+                            <div class="performer-location">MD</div>
+                        </div>
+                        <div class="performer-score positive">+220</div>
+                    </div>
+
+                    <div class="performer-row">
+                        <span class="material-icons performer-photo" style="font-size: 50px; color: #F39C12;">account_circle</span>
+                        <div class="performer-details">
+                            <div class="performer-name">Mark Patterson</div>
+                            <div class="performer-location">Memphis, TN</div>
+                        </div>
+                        <div class="performer-score positive">+1%</div>
+                    </div>
+
+                    <div class="performer-row">
+                        <span class="material-icons performer-photo" style="font-size: 50px; color: #9B59B6;">account_circle</span>
+                        <div class="performer-details">
+                            <div class="performer-name">Toripa, FL</div>
+                            <div class="performer-location">TPA</div>
+                        </div>
+                        <div class="performer-score positive">+12</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Branches Overview -->
+            <div class="card branches-card">
+                <h2 class="card-title">Branches Overview</h2>
+                <div class="branches-list">
+                    <div class="branch-item">
+                        <div class="branch-header">
+                            <div class="branch-name">Akron, OH</div>
+                        </div>
+                        <div class="branch-metrics">
+                            <div class="branch-metric">
+                                <div class="metric-label-small">Completion</div>
+                                <div class="metric-value-small">87.2%</div>
+                            </div>
+                            <div class="branch-metric">
+                                <div class="metric-label-small">On-Time</div>
+                                <div class="metric-value-small highlight-green">88.5%</div>
+                            </div>
+                            <div class="branch-metric">
+                                <div class="metric-label-small">Avg Score</div>
+                                <div class="metric-value-small">91.2</div>
+                            </div>
+                            <div class="branch-metric">
+                                <div class="metric-label-small">Trainings</div>
+                                <div class="metric-value-small">1,550</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="branch-item">
+                        <div class="branch-header">
+                            <div class="branch-name">Baltimore, MD</div>
+                        </div>
+                        <div class="branch-metrics">
+                            <div class="branch-metric">
+                                <div class="metric-label-small">Completion</div>
+                                <div class="metric-value-small">86.3%</div>
+                            </div>
+                            <div class="branch-metric">
+                                <div class="metric-label-small">On-Time</div>
+                                <div class="metric-value-small highlight-green">91.5%</div>
+                            </div>
+                            <div class="branch-metric">
+                                <div class="metric-label-small">Avg Score</div>
+                                <div class="metric-value-small">83.2</div>
+                            </div>
+                            <div class="branch-metric">
+                                <div class="metric-label-small">Trainings</div>
+                                <div class="metric-value-small">4,150</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="branch-item">
+                        <div class="branch-header">
+                            <div class="branch-name">Memphis, TN</div>
+                        </div>
+                        <div class="branch-metrics">
+                            <div class="branch-metric">
+                                <div class="metric-label-small">Completion</div>
+                                <div class="metric-value-small">84.9%</div>
+                            </div>
+                            <div class="branch-metric">
+                                <div class="metric-label-small">On-Time</div>
+                                <div class="metric-value-small highlight-green">92.5%</div>
+                            </div>
+                            <div class="branch-metric">
+                                <div class="metric-label-small">Avg Score</div>
+                                <div class="metric-value-small">87.9</div>
+                            </div>
+                            <div class="branch-metric">
+                                <div class="metric-label-small">Trainings</div>
+                                <div class="metric-value-small">1,005</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Score Distribution -->
+            <div class="card distribution-card">
+                <h2 class="card-title">Score Distribution</h2>
+                <div class="distribution-list">
+                    <div class="distribution-row">
+                        <div class="distribution-label">50-59</div>
+                        <div class="distribution-bar-container">
+                            <div class="distribution-bar red-bar" style="width: 3%;"></div>
+                        </div>
+                        <div class="distribution-percentage">3%</div>
+                    </div>
+
+                    <div class="distribution-row">
+                        <div class="distribution-label">60-69</div>
+                        <div class="distribution-bar-container">
+                            <div class="distribution-bar red-bar" style="width: 3%;"></div>
+                        </div>
+                        <div class="distribution-percentage">3%</div>
+                    </div>
+
+                    <div class="distribution-row">
+                        <div class="distribution-label">70-79</div>
+                        <div class="distribution-bar-container">
+                            <div class="distribution-bar orange-bar" style="width: 7%;"></div>
+                        </div>
+                        <div class="distribution-percentage">7%</div>
+                    </div>
+
+                    <div class="distribution-row">
+                        <div class="distribution-label">80-89</div>
+                        <div class="distribution-bar-container">
+                            <div class="distribution-bar blue-bar" style="width: 29%;"></div>
+                        </div>
+                        <div class="distribution-percentage">29%</div>
+                    </div>
+
+                    <div class="distribution-row">
+                        <div class="distribution-label">90-100</div>
+                        <div class="distribution-bar-container">
+                            <div class="distribution-bar blue-bar" style="width: 59%;"></div>
+                        </div>
+                        <div class="distribution-percentage">59%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </div>
+
+    <script src="resources/js/dashboard.js"></script>
+</body>
+</html>
